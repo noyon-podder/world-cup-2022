@@ -20,6 +20,8 @@ Base CSS
 }
 body {
   font-family: "Poppins", sans-serif;
+  max-width: 1170px;
+  margin: 0 auto;
 }
 ul {
   margin: 0;
@@ -43,8 +45,6 @@ img {
   /* object-fit: cover; */
 }
 .container {
-  max-width: 1170px;
-  margin: 0 auto;
   padding-top: 50px;
 }
 .button {
@@ -56,6 +56,7 @@ img {
   background-color: rgb(253, 44, 44);
   color: #fff;
   border-radius: 8px;
+  text-transform: capitalize;
   border: 1px solid transparent;
   transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
@@ -70,6 +71,12 @@ img {
 }
 .button:hover .icon {
   margin-left: 7px;
+}
+.sidebar ul li.active {
+  background-color: rgb(218, 25, 25);
+}
+.sidebar ul li.active a {
+  color: #fff;
 }
 /* 
 ===========================
@@ -104,4 +111,93 @@ HEADER PART
   font-weight: 400;
   margin-top: 15px;
   margin-bottom: 25px;
+}
+/* 
+===========================
+Blog Section
+===========================
+ */
+.blog-section {
+  display: grid;
+  grid-template-columns: 312px 1fr;
+  grid-column-gap: 25px;
+  padding: 100px 0;
+}
+.sidebar ul {
+  background: linear-gradient(
+    338deg,
+    rgba(4, 4, 11, 1) 0%,
+    rgba(11, 10, 10, 1) 61%,
+    rgba(16, 23, 22, 1) 100%
+  );
+  border-radius: 13px;
+  padding: 30px 20px;
+  text-align: center;
+}
+.sidebar ul li {
+  padding: 10px 20px;
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.sidebar ul li:last-child {
+  margin-bottom: 0;
+}
+.sidebar ul li a {
+  color: #131313;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+/* blogs part start  */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.blog {
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+}
+.blog-img img {
+  width: 100%;
+  height: 100%;
+}
+.blog-content {
+  padding: 6px 15px 20px 15px;
+}
+.blog-content button {
+  outline: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: 1px solid #161616;
+  border-radius: 5px;
+  padding: 2px 13px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #161616;
+}
+.blog-content .blog-heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #161616;
+  margin: 20px 0;
+  line-height: 27px;
+}
+.blog-details {
+  display: flex;
+  gap: 70px;
+}
+.blog-details span {
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: rgba(22, 22, 22, 0.7);
+}
+.blog-button {
+  display: none;
 }
