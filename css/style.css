@@ -6,10 +6,10 @@ google fonts
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 /* 
-===========================
-Base CSS
-===========================
- */
+ ===========================
+ Base CSS
+ ===========================
+  */
 * {
   margin: 0;
   padding: 0;
@@ -33,10 +33,10 @@ a:hover {
   text-decoration: none;
 }
 /* 
-===========================
-Reusable CSS
-===========================
- */
+ ===========================
+ Reusable CSS
+ ===========================
+  */
 img {
   width: 100%;
   height: 100%;
@@ -79,10 +79,10 @@ img {
   color: #fff;
 }
 /* 
-===========================
-HEADER PART
-===========================
- */
+ ===========================
+ HEADER PART
+ ===========================
+  */
 .header {
   background: linear-gradient(
     338deg,
@@ -113,10 +113,10 @@ HEADER PART
   margin-bottom: 25px;
 }
 /* 
-===========================
-Blog Section
-===========================
- */
+ ===========================
+ Blog Section
+ ===========================
+  */
 .blog-section {
   display: grid;
   grid-template-columns: 312px 1fr;
@@ -215,10 +215,10 @@ Blog Section
   display: none;
 }
 /* 
-===========================
-footer start
-===========================
- */
+ ===========================
+ footer start
+ ===========================
+  */
 .footer {
   background: linear-gradient(
     338deg,
@@ -281,10 +281,10 @@ footer start
   background-color: transparent;
 }
 /* 
-===========================
-Matches Time
-===========================
-*/
+ ===========================
+ Matches Time
+ ===========================
+ */
 .match-section {
   display: grid;
   grid-template-columns: 312px 1fr;
@@ -335,10 +335,10 @@ Matches Time
 }
 
 /* 
-===========================
-media queries
-===========================
- */
+ ===========================
+ media queries
+ ===========================
+  */
 
 /* mobile screen  */
 @media screen and (max-width: 500px) {
@@ -403,10 +403,10 @@ media queries
 }
 
 /* 
-=========================
-Tablet responsive 
-=========================
-*/
+ =========================
+ Tablet responsive 
+ =========================
+ */
 @media screen and (min-width: 688px) and (max-width: 992px) {
   .container {
     max-width: 100%;
@@ -471,10 +471,10 @@ Tablet responsive
   }
 }
 /* 
-=========================
-Desktop Or Laptop 
-=========================
-*/
+ =========================
+ Desktop Or Laptop 
+ =========================
+ */
 @media screen and (min-width: 993px) and (max-width: 1170px) {
   .container {
     width: 90%;
